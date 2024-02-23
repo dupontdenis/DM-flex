@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--body-background);
+  color: var(--body-foreground);
+  margin: 0 auto;
+  padding: 0;
+  max-width: 80em;
+}
+
+header {
+  display: flex;
+  background: var(--header-background);
+  padding: .5em 1em;
+  min-height: 2vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+#sidebar {
+  flex: 1;
+  order: 2;
+  min-width: 5em;
+  padding: 0 1em;
+  margin-top: 2em;
+}
+
+
+
+/* =forms */
+header form {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 1em;
+}
+
+header label {
+  margin-inline-start: auto;
+}
+
+header input[type=search] {
+  flex: 2;
+  font-family: inherit;
+  font-size: 1em;
+  border: none;
+  width: 1rem;
+  overflow: hidden;
+}
+
+header input[type=submit] {
+  flex: 1;
+  font-family: inherit;
+  border: none;
+  font-size: 1em;
+  background: var(--donation-submit);
+  color: var(--donation-button-color);
+}
+
+
+
+
+/* =typography */
+header h1 {
+  flex: 1;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+  white-space: nowrap;
+}
